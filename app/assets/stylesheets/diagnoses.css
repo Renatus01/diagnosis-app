@@ -10,11 +10,41 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.edit-user {
+  font-size: 10px;
+}
+
+.edit-user a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
 }
 .side-menu {
   background-color: #1a5226;
   height: calc(100vh - 100px);
   padding: 0 20px;
+}
+
+.column {
+  padding: 20px 0 240px;
+}
+
+.week-condition a {
+  text-decoration: none;
+  color: white;
 }
 
 .main {

@@ -1,0 +1,101 @@
+.wrapper {
+  display: flex;
+}
+.side-bar {
+  background-color: #4daa41;
+  height: 100vh;
+  width: 300px;
+}
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #099e3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.edit-user {
+  font-size: 10px;
+}
+
+.edit-user a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+.side-menu {
+  background-color: #1a5226;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+}
+
+.column {
+  padding: 20px 0 400px;
+}
+
+.week-condition-icon{
+  border: 1px solid rgb(224, 231, 233);
+  padding: 60px;
+  color: white;
+
+}
+
+.week-condition a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  background-color: #ffffff;
+  width: calc(100% - 300px);
+}
+
+.main-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.stethoscope-icon {
+  width:  40px;
+  height: 40px;
+}
+
+
+.diagnoses {
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 120px);
+  padding: 46px 60px 0;
+  overflow: scroll;
+}
+
+.question {
+  margin: 10px 0;
+}
+
+.diagnosis{
+  align-items: flex-end;
+}
+
+.main-footer {
+  background-color: #DDDDDD;
+  height: 120px;
+  padding: 20px 40px;
+}

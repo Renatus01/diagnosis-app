@@ -81,13 +81,33 @@
 
 .diagnoses {
   background-color: #FAFAFA;
-  height: calc(100vh - 100px - 120px);
-  padding: 46px 60px 0;
+  height: calc(100vh - 100px - 80px);
+  padding: 20px 60px 0;
   overflow: scroll;
 }
 
-.question {
+.interview-list {
   margin: 10px 0;
+}
+.answer-list{
+  margin-bottom: 20px;
+}
+
+.diagnosis-btn-contents {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.diagnosis-btn-text {
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.day-condition-icon {
+  border: 1px solid rgb(224, 231, 233);
+  padding: 60px;
+  color: white;
 }
 
 .diagnosis{
@@ -96,6 +116,6 @@
 
 .main-footer {
   background-color: #DDDDDD;
-  height: 120px;
+  height: 80px;
   padding: 20px 40px;
 }

@@ -10,19 +10,159 @@
 </div>
 
 <div class="diagnoses">
-  <div class="questions">
-   
-      <% 10.times do |question| %>
-       <div class="question">
-        q.今日の体調はどうですか？
-        </div>
-        <% end %>
-       <div class="diagnosis">
-        診断する
+  <div class="interviews">
+    ■下記の質問に答えてください。（全10問）
+      <%# <％ #プランA %>
+    <%= form_with model: @answer, local: true do |f| %>
+      <div class="interview-list">
+        <%= @interview %>
       </div>
-    
+      <div class="answer-list">
+        <%= f.radio_button :answer_1, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_1, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_1, value="3" %>
+        少しある
+        <%= f.radio_button :answer_1, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_2, value="1" %>
+        ほとんど気にしていない
+        <%= f.radio_button :answer_2, value="2" %>
+        あまり気にしていない
+        <%= f.radio_button :answer_2, value="3" %>
+        少し気にしている
+        <%= f.radio_button :answer_2, value="4" %>
+        気にしている
+      </div>
+
+      <div class="interview-list">
+        <%= @interview %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_3, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_3, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_3, value="3" %>
+        少しある
+        <%= f.radio_button :answer_3, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_4, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_4, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_4, value="3" %>
+        少しある
+        <%= f.radio_button :answer_4, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_5, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_5, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_5, value="3" %>
+        少しある
+        <%= f.radio_button :answer_5, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_6, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_6, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_6, value="3" %>
+        少しある
+        <%= f.radio_button :answer_6, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_7, value="1" %>
+        ほとんど気にしていない
+        <%= f.radio_button :answer_7, value="2" %>
+        あまり気にしていない
+        <%= f.radio_button :answer_7, value="3" %>
+        少し気にしている
+        <%= f.radio_button :answer_7, value="4" %>
+        気にしている
+      </div>
+
+      <div class="interview-list">
+        <%= @interview.find(1) %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_8, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_8, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_8, value="3" %>
+        少しある
+        <%= f.radio_button :answer_8, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview.find(1) %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_9, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_9, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_9, value="3" %>
+        少しある
+        <%= f.radio_button :answer_9, value="4" %>
+        ある
+      </div>
+
+      <div class="interview-list">
+        <%= @interview.find(1) %>
+      </div>
+      <div class="answer-list">
+        <%= f.radio_button :answer_10, value="1" %>
+        ほとんどない
+        <%= f.radio_button :answer_10, value="2" %>
+        あまりない
+        <%= f.radio_button :answer_10, value="3" %>
+        少しある
+        <%= f.radio_button :answer_10, value="4" %>
+        ある
+      </div>
+
+
+      
+      <div class="diagnosis-btn-contents">
+        <%= image_tag '_i_icon_11272_icon_112720_256.png' , size: '40x40' ,class: "diagnosis-btn-icon" %>
+        <%= f.submit "診断する" ,class:"diagnosis-btn" %>
+      </div>
+      <%# <% div class="day-condition-icon"></div> %>
+    <% end %>
   </div>
 </div>
 
-<div class="main-footer">
-</div>
+<div class="main-footer"></div>
